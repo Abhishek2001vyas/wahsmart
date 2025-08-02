@@ -192,8 +192,7 @@ class _LoginScreenState extends State<LoginScreen> {
              var   _countryDialCodeq = _countryDialCode!=null?_countryDialCode!.startsWith('+')
                     ? _countryDialCode!.substring(1)
                     : _countryDialCode:"";
-                print("Dsfsd ${_countryDialCode}");
-                await Get.find<AuthController>().login("${_countryDialCode!=null?"$_countryDialCodeq":"91"}${phone.text}").then((value) {
+               await Get.find<AuthController>().login("${_countryDialCode!=null?"$_countryDialCodeq":"91"}${phone.text}").then((value) {
 
                 },);
               },

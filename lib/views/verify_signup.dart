@@ -222,7 +222,7 @@ class _verifysignupState extends State<verifysignup> {
                     style: TextStyle(color: Colors.black, fontSize: 16),
                     children: [
                       TextSpan(
-                        text: "T&C and Privacy Policy ",
+                        text: "T&C and \nPrivacy Policy ",
                         style: TextStyle(
                           color: Get.theme.primaryColor,
                           fontWeight: FontWeight.bold,
@@ -298,7 +298,7 @@ class _verifysignupState extends State<verifysignup> {
                 var   _countryDialCodeq = _countryDialCode!=null?_countryDialCode!.startsWith('+')
                     ? _countryDialCode!.substring(1)
                     : _countryDialCode:"";
-                print("Dsfsd ${_countryDialCode}");
+                // print("Dsfsd ${_countryDialCode}");
                 // If all validations pass, create body and call API
                 Signupbody body = Signupbody(
                   aptNumber: house.text,
